@@ -1,0 +1,29 @@
+4chan archiver
+
+== Apologies ==
+This is *crappy* Perl code (but it seems to work).
+
+
+== Dependancies ==
+Not a lot but on an Ubuntu system you may need to install:
+- libhtml-tokeparser-simple-perl
+
+
+== Usage ==
+$ perl 4chanarchiver.pl https://boards.4chan.org/b/thread/XXXXXX/thread-name
+
+Before using, check the output path (by default I put it in /tmp/4chan).
+The script will create a sub-directory using the thread title extracted
+from the URI, and fill it with the pictured grabbed from the thread.
+
+
+== Output ==
+A lot of NSFW pictures.
+
+
+== TODO ==
+* A bit of parallelism (to grab multiple files at a time)
+* More generic code to easily handle other chans (/b/ is supported here)
+* Handle existing files
+* Auto-refresh to grab new content
+* Better code :)
